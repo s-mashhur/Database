@@ -1,0 +1,8 @@
+   public class DataBaseContext : DbContext, IDataBaseContext
+   {
+       public DbSet<Entity> entities { get; set; }
+       protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+       {
+
+       }
+   }
